@@ -1,0 +1,16 @@
+h1,
+.heading-1 {
+    @include display(inline-block);
+    @include margin(0, 0, 1rem, 0) @include fontFamily('Source Sans Pro', 900, sans serif);
+    @include text-size(2.2em);
+    margin-bottom: 24px;
+
+    @include breakpoint-down('small') {
+        text-transform: uppercase;
+    }
+
+}
+
+p {
+    @include text-align(left);
+}

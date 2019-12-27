@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.31" height="27.469" viewBox="0 0 22.31 27.469">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Icon_Basket" data-name="Icon Basket" class="cls-1" d="M1598.64,34.18h8.59V35.9h-8.59V34.18Zm0,1.718h1.72v5.153h-1.72V35.9Zm6.87,0h1.72v5.153h-1.72V35.9Zm-13.74,3.435h22.33V58.227h-22.33V39.333Zm1.72,17.176h18.89v3.435h-18.89V56.509Zm1.72,1.718h15.45v3.435h-15.45V58.227Z" transform="translate(-1591.78 -34.188)"/>
+</svg>

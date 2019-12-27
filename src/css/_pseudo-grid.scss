@@ -1,0 +1,102 @@
+.col-1  {
+    width: percentage(1/12);
+    @include float-left;
+}
+.col-2  {
+    width: percentage(2/12);
+    @include float-left;
+}
+.col-3  {
+    width: percentage(3/12);
+    @include float-left;
+}
+.col-4  {
+    width: percentage(4/12);
+    @include float-left;
+}
+.col-5  {
+    width: percentage(5/12);
+    @include float-left;
+}
+.col-6  {
+    width: percentage(6/12);
+    @include float-left;
+}
+.col-7 {
+    width: percentage(7/12);
+    @include float-left;
+}
+.col-8 {
+    width: percentage(8/12);
+    @include float-left;
+}
+.col-9 {
+    width: percentage(9/12);
+    @include float-left;
+}
+.col-10  {
+    width:percentage(10/12);
+    @include float-left;
+}
+.col-11  {
+    width: percentage(11/12);
+    @include float-left;
+}
+.col-12  {
+    width: percentage(12/12);
+    @include float-left;
+    }
+
+
+@include breakpoint('large') {
+
+.col-1-large {
+    width: percentage(1/12);
+    @include float-left;
+}
+.col-2-large {
+    width: percentage(2/12);
+    @include float-left;
+}
+.col-3-large {
+    width: percentage(3/12);
+    @include float-left;
+}
+.col-4-large {
+    width: percentage(4/12);
+    @include float-left;
+}
+.col-5-large {
+    width: percentage(5/12);
+    @include float-left;
+}
+.col-6-large {
+    width: percentage(6/12);
+    @include float-left;
+}
+.col-7-large {
+    width: percentage(7/12);
+    @include float-left;
+}
+.col-8-8-large{
+    width: percentage(8/12);
+    @include float-left;
+}
+
+.col-9-large {
+    width: percentage(9/12);
+    @include float-left;
+}
+.col-10-large {
+    width:percentage(10/12);
+    @include float-left;
+}
+.col-11-large {
+    width: percentage(11/12);
+    @include float-left;
+}
+.col-12-large {
+    width: percentage(12/12);
+    @include float-left;
+    }
+}

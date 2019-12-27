@@ -1,0 +1,160 @@
+header {
+    @include clearfix();
+    @include display(flex);
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    @include breakpoint('large') {
+        @include padding($unit_4, $unit_6, $unit_2, $unit_6);
+        @include display(block);
+    }
+
+    @include border(0, 0, 1px, 0, $grey, solid);
+
+    .search-container {
+        @include text-size(1.45em);
+        width: 100%;
+
+        @include breakpoint('large') {
+            @include text-size(1em);
+            display: inline-block;
+            width: auto;
+        }
+
+        .form-inline {
+            display: inline-flex;
+            justify-content: space-between;
+            width: 100%;
+            @include backgroundColor($white);
+
+            @include breakpoint('large') {
+                display: block;
+                @include backgroundColor(transparent);
+            }
+
+
+            .form-item {
+                margin: 0;
+
+                @include breakpoint-down('small') {
+                    margin: 0;
+                }
+
+                input[type="text"] {
+                    @include breakpoint('large') {
+                        display: block;
+                        @include backgroundColor(transparent);
+                        padding: 0;
+                        border-left: 1px solid $white;
+                        padding-left: $unit_2;
+                        font-size: inherit;
+                        color: $white;
+
+                        &::placeholder {
+                            color: $white;
+                            font-size: inherit;
+                        }
+
+                    }
+
+                }
+            }
+
+            input[type='submit'] {
+                @include backgroundColor(transparent);
+                border: none;
+                @include text-size(inherit);
+
+                @include breakpoint('large') {
+                    display: none;
+
+                }
+            }
+        }
+
+        input [type="text"] {
+            @include text-size(inherit);
+        }
+    }
+
+    ul.user-area {
+        @include padding(0, $unit_2, 0, $unit_2);
+        flex-grow: 1;
+        display: flex;
+        align-content: flex-end;
+        justify-content: space-between;
+        align-items: center;
+
+        @include breakpoint('large') {
+            float: right;
+            @include inline-block;
+            margin: 0;
+            padding-top: 0;
+        }
+
+        li {
+            @include inline-block;
+            height: 100%;
+            display: flex;
+
+            @include breakpoint('large') {
+                display: inline-block;
+                &:not(:last-child) {
+                    padding-right: $unit_7;
+                }
+
+                font-size: 0.85em;
+            }
+
+            a {
+                @include no-deco;
+                color: $white;
+
+                @include breakpoint-down('small') {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 27px;
+                }
+
+                @include breakpoint('large') {
+                    display: inline-block;
+                }
+
+                &.invert {
+                    background-color: $white;
+
+                    svg image {
+                        background-color: $black;
+                    }
+                }
+
+                span {
+                    @include display(none);
+
+                    @include breakpoint('large') {
+                        display: inline;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .brand {
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 900;
+        @include display(inline-block);
+        @include uppercase;
+        @include text-size(2.3em);
+
+
+        @include breakpoint('large') {
+            @include float-left;
+        }
+    }
+
+}

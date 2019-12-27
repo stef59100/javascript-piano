@@ -1,0 +1,83 @@
+@import "breakpoints";
+@import "positioning";
+
+
+@mixin right-align {
+    text-align:right;
+}
+@mixin left-align {
+    text-align:left;
+}
+@mixin uppercase {
+    text-transform: uppercase;
+}
+@mixin float-left {
+    float:left;        
+}
+@mixin float-right {
+    float:right;        
+}
+@mixin clearfix() {
+    &::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }
+@mixin no-deco {
+    text-decoration: none;
+}
+@mixin no-background() {
+    background:none;
+}
+@mixin no-border(){
+    border:none;
+}
+@mixin inline-block(){
+    display: inline-block;
+}
+@mixin display($disp){
+    display: $disp ;
+}
+@mixin padding($top,$right,$bottom, $left){
+    padding: $top $right $bottom $left;
+}
+
+@mixin margin($top,$right,$bottom, $left){
+    margin: $top $right $bottom $left;
+}
+@mixin text-align($align){
+    text-align: $align;
+}
+@mixin text-size($size){
+    font-size:$size;
+}
+
+@mixin border($top,$right,$bottom,$left, $color, $type) {
+    border-top-width: $top;
+    border-right-width: $right;
+    border-bottom-width: $bottom;
+    border-left-width: $left;
+    border-color: $color;
+    border-style: $type;
+}
+@mixin backgroundColor($color){
+    background-color: $color;
+}
+@mixin fontColor($color){
+    color: $color;
+}
+@mixin fontFamily($family, $weight,$callback) {
+    font-family: $family,$callback;
+    font-weight: $weight;
+}
+@mixin justify-content($justify){
+    justify-content: $justify;
+}
+@mixin  order($order) {
+    order: $order;
+}
+
+
+
+

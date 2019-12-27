@@ -1,0 +1,24 @@
+footer {
+    background: $white;
+    color: $black;    
+    @include text-align(center);
+    @include padding($unit_3, $unit_3, $unit_3,$unit_3);
+    @include text-size(0.54em);
+    .info-brand {
+        @include breakpoint('large'){
+            @include text-align(right);        
+        }
+    }
+
+    .brand-slogan {
+        @include display(none);
+        @include breakpoint('large')
+        {
+            @include display(inline);
+            float: left;
+        }
+    }
+    a:link, a:visited {
+        @include fontColor($black);
+    }
+}

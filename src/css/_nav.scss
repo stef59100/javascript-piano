@@ -1,0 +1,28 @@
+@import "effects";
+@import "animations";
+
+nav {
+    li {
+        a {
+            @include transitions-all;
+        }
+    }
+    &.black {
+
+        li {
+            a {
+                color: white;
+            }
+        }
+    }
+    &.white {
+
+        li {
+            a {
+                color: black;
+            }
+        }
+    }
+
+
+}

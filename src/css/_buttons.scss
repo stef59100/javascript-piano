@@ -1,0 +1,11 @@
+button,
+.btn {
+    @include padding($unit_3, $unit_5, $unit_3, $unit_5);
+
+    &.btn-golden {
+        background-color: rgba($gold, .9);
+        @include no-border;
+        color: $white;
+    }
+}
+

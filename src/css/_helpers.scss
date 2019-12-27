@@ -1,0 +1,46 @@
+.clear {
+    @include clearfix;
+}
+
+.hidden {
+    display: none !important;    
+}
+
+.sm-hidden {
+    @include breakpoint-down('small'){
+        display: none;
+    }
+}
+
+.lg-hidden {
+    @include breakpoint('large'){
+        display: none!important;
+    }
+}
+
+.show {
+    @include display(block);
+}
+
+.error {
+    color: red;
+    font-size: 1.45rem;
+    @include margin(0, 0, $unit_2, 0);
+    @include display(block);
+}
+
+.overlay {
+    &:not(.hidden) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:rgba($black, .30);
+        z-index: 500;
+    }
+
+}
+.nobottompadding{
+    padding-bottom: 0 !important;
+}

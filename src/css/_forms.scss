@@ -1,0 +1,53 @@
+.login-form {
+    @include padding(0, 0, 0, 44px);
+
+    a {
+        @include text-size(0.657em);
+        @include no-deco;
+
+        &.pos-right {
+            @include display(inline-block);
+            @include float-right;
+            @include padding($unit_3, 0, $unit_3, 0);
+        }
+    }
+
+}
+
+form {
+    .form-item {
+        @include margin(0, 0, $unit_4, 0);
+
+        .login-form & {
+            @include fontFamily('Roboto', 300, 'sans serif');
+            @include text-size(1.46em);
+        }
+
+        label {
+            @include display(block);
+            @include margin(0, 0, $unit_3, 0);
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            @include no-border;
+            @include padding($unit_3, $unit_5, $unit_3, $unit_5);
+            max-width: 100%;
+            width: 100%;
+            @include text-size(inherit);
+        }
+
+        input[type="submit"] {
+            @include fontFamily('Roboto', 300, 'sans serif');
+            @include text-size(inherit);
+
+            cursor: pointer;
+
+            &:disabled {
+                background: desaturate($gold, 30%);
+                cursor: none;
+            }
+        }
+    }
+}
